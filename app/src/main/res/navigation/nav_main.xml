@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/leaderBoardFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="pe.startapps.navigationcomponents.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="pe.startapps.navigationcomponents.ui.leaderboard.LeaderBoardFragment"
+        android:label="LeaderBoardFragment"
+        tools:layout="@layout/fragment_leaderboard">
+
+        <action
+            android:id="@+id/action_leaderBoardFragment_to_matchFragment"
+            app:destination="@id/matchFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="pe.startapps.navigationcomponents.ui.match.MatchFragment"
+        android:label="MatchFragment"
+        tools:layout="@layout/fragment_match">
+
+        <argument
+            android:name="image"
+            app:argType="integer"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_matchFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameWinnerFragment"
+        android:name="pe.startapps.navigationcomponents.ui.game.GameWinnerFragment"
+        android:label="GameWinnerFragment"
+        tools:layout="@layout/fragment_gamewinner">
+
+        <action
+            android:id="@+id/action_gameWinnerFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="pe.startapps.navigationcomponents.ui.game.GameOverFragment"
+        android:label="GameOverFragment"
+        tools:layout="@layout/fragment_gameover">
+
+        <action
+            android:id="@+id/action_gameOverFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="pe.startapps.navigationcomponents.ui.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+
+        <action
+            android:id="@+id/action_gameFragment_to_gameWinnerFragment"
+            app:destination="@id/gameWinnerFragment" />
+
+    </fragment>
+
+</navigation>

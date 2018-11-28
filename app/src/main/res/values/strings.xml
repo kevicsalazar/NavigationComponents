@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">NavigationComponents</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="start">Iniciar</string>
+    <string name="profile_name">Kevin Salazar</string>
+    <string name="tryagain">Volver a intentar</string>
+    <string name="game_over">Fin del Juego</string>
+    <string name="game_winner">Ganador</string>
+    <string name="nextmatch">Siguiente Partida</string>
+    <string name="vs">VS</string>
+    <string name="last_version">¿Cuál es la última versión de Android?</string>
+    <string name="android_marshmallow">Android Marshmallow</string>
+    <string name="android_pie">Android Pie</string>
+    <string name="android_oreo">Android Oreo</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="share">Compartir</string>
+
+</resources>

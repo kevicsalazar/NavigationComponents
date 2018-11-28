@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#444444</color>
+    <color name="colorPrimaryDark">#383838</color>
+    <color name="colorAccent">#717171</color>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#5bb17e</color>
+    <color name="grey">#484848</color>
+    <color name="grey_400">#bdbdbd</color>
+
+    <color name="match_background">#444444</color>
+    <color name="profile_background">#7f90ff</color>
+    <color name="gameover_background">#f18e81</color>
+    <color name="gamewinner_background">#c3f4cc</color>
+
+</resources>
